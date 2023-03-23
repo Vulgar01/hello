@@ -1,0 +1,46 @@
+md5()  hashlib
+ 
+listdir() os中用来列出指定文件夹中的文件和子文件夹列表的函数
+ 
+mkdir()  os中用来创建文件夹的函数是
+
+getsize() os.path中的函数可以用来获取给定文件的大小
+
+getcwd() os中的函数可以用来获取当前工作文件夹的路径
+ 
+exists()  os.path中用来判断指定文件是否存在的函数
+ 
+isfile()  os.path中用来判断指定路径是否为文件的函数
+ 
+isdir()  os.path中用来判断指定路径是否为文件夹的函数是
+
+getmtime() 指定的文件的最后修改时间。
+
+join() 把多个路径连接成为一个完整的路径，并插入适当的路径分隔符
+
+make_archive() shutil中的函数可以用来创建tar或zip格式的压缩文件
+
+unpack_archive() shutil中的函数【1】可以用来解压缩tar或zip格式的压缩文件
+
+from os.path import splitext
+from os.path import split 
+print(splitext(r'C:\Python39\python.exe')[1] ) ==>  .exe
+print(split(r'C:\Python39\python.exe')[1] )  ==> python.exe
+
+使用print()函数可以通过file参数指定输出到文件
+
+'r' 'w' 'x'指针位于文件头 w清空写 x报异常
+'a' 'ab' 'a+'指针位于文件尾
+
+openpyxl的函数Workbook()默认自动创建一个空的工作表。
+
+二进制文件：视频音频文件、.whl的文件、.pyd、python.exe
+
+扩展命为.py和.pyw的Python程序文件属于文本文件。
+Python源程序文件不是二进制文件
+
+文件对象的seek()方法定位的单位是字节，即使是使用'r'或'w'模块打开的文本文件也是一样的。（正确）
+
+内置函数open()以'r'模式打开的文本文件对象是可遍历的，可以使用for循环遍历文件中每行文本。
+
+在docx格式的文件中，每个段落中一段具有相同格式的文本称作一个run
